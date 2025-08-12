@@ -1,15 +1,18 @@
 <script>
    import "./app.css";
-   import Home from "./routes/dashboard/Home.svelte";
+   import Dashboard from "./pages/dashboard/Dashboard.svelte";
+   import Router from 'svelte-spa-router';
+  import Inventory from "./pages/inventory/Inventory.svelte";
+  import Navbar from "./lib/components/Navbar.svelte";
    const routes = {
-    '/': Home,
-    // '/dashboard': Dashboard
+    '/': Dashboard,
+    '/inventory': Inventory
   };
 </script>
 
 <main>
-  <div class=" bg-amber-600">Welcome to svelte</div>
-  <a href='/dashboard'>dash</a>
+ <Navbar/>
+  <Router {routes} />
 </main>
 
 <style>

@@ -1,6 +1,5 @@
 <!-- src/pages/Home.svelte -->
 <script>
-  import Navbar from '../../lib/components/Navbar.svelte';
   import KpiCard from '../../lib/components/KpiCard.svelte';
   import ChartCard from '../../lib/components/ChartCard.svelte';
 
@@ -11,7 +10,6 @@
   ];
 </script>
 
-<Navbar />
 
 <div class="p-6 space-y-6">
   <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
