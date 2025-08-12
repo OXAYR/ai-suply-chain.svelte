@@ -1,15 +1,15 @@
 <script>
-    import Navbar from '$lib/components/Navbar.svelte';
     let products = [];
     import { onMount } from 'svelte';
+    import Navbar from '../../lib/components/Navbar.svelte';
   
     onMount(async () => {
       const res = await fetch('/data/products.json');
       products = await res.json();
     });
-  </script>
+</script>
   
-  <Navbar />
+  <Navbar/>
   <div class="p-6">
     <h1 class="text-xl font-bold mb-4">Inventory</h1>
     <table class="w-full bg-white shadow rounded">

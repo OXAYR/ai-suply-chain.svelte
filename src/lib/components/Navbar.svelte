@@ -1,6 +1,6 @@
 <script>
-    import { user } from '$lib/stores/userStore';
-    import { $user } from 'svelte/store';
+    // import { user } from '$lib/stores/userStore';
+    // import { $user } from 'svelte/store';
   </script>
   
   <nav class="bg-gray-900 text-white px-6 py-3 flex justify-between items-center">
